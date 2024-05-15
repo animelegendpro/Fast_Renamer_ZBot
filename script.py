@@ -35,14 +35,14 @@ class script(object):
 
     ADMIN_TXT = """<b><u>ADMIN ALL COMMANDS HERE</u></b>
 
-<b>⦿ /users - Use This Command To See Total Users</b>
-<b>⦿ /allids - Use This Command To See All Users IDs</b>
-<b>⦿ /broadcast - Use This Command To Send A Message To Users</b>
-<b>⦿ /warn - Use This Command To Send A Message To A User</b>
-<b>⦿ /resetpower - Use This Command To Reset User Power</b>
-<b>⦿ /ceasepower - Use This Command To Cease User Power</b>
-<b>⦿ /addpremium - Use This Command To Add Premium To Users</b>
-<b>⦿ /restart - Use This Command To Cancel All Process And Restart The Bot</b>"""
+<b>/users - Use This Command To See Total Users</b>
+<b>/allids - Use This Command To See All Users IDs</b>
+<b>/broadcast - Use This Command To Send A Message To Users</b>
+<b>/warn - Use This Command To Send A Message To A User</b>
+<b>/resetpower - Use This Command To Reset User Power</b>
+<b>/ceasepower - Use This Command To Cease User Power</b>
+<b>/addpremium - Use This Command To Add Premium To Users</b>
+<b>/restart - Use This Command To Cancel All Process And Restart The Bot</b>"""
 
 
 
