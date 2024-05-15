@@ -33,7 +33,7 @@ class script(object):
 <b>🛍 ᴜᴘɪ ɪᴅ:</b> <code>anime-legend@axl</code> 
 
 
-    ADMIN_TXT = """<b><u>⌬ ADMIN ALL COMMANDS HERE</u></b>
+    ADMIN_TXT = """<b><u>ADMIN ALL COMMANDS HERE</u></b>
 
 <b>⦿ /users - Use This Command To See Total Users</b>
 <b>⦿ /allids - Use This Command To See All Users IDs</b>
