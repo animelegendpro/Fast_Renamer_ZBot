@@ -36,15 +36,15 @@ async def start(client, message):
             uploadlimit(message.from_user.id, 2147483652)
             usertype(message.from_user.id, "Free")
     if ends == None:
-        text = f"**User ID :** `{message.from_user.id}` \n**Name :** {message.from_user.mention} \n\n**🏷 Plan :** {user} \n\n✓ Upload 2GB Files \n✓ Daily Upload : {humanbytes(limit)} \n✓ Today Used : {humanbytes(used)} \n✓ Remain : {humanbytes(remain)} \n✓ Timeout : 2 Minutes \n✓ Parallel process : Unlimited \n✓ Time Gap : Yes \n\n**Validity :** Lifetime"
+        text = f"**User ID :** `{message.from_user.id}` \n**Name :** {message.from_user.mention} \n\n**<b>🏷 ᴘʟᴀɴ :</b>** {user} \n\n<b>✓ ᴜᴘʟᴏᴀᴅ 2GB ғɪʟᴇs \n<b>✓ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ <b>: {humanbytes(limit)} \n<b>✓ ᴛᴏᴅᴀʏ ᴜsᴇᴅ </b>: {humanbytes(used)} \n</b>✓ ʀᴇᴍᴀɪɴ :</b> {humanbytes(remain)} \n</b>✓ ᴛɪᴍᴇᴏᴜᴛ :</b> 2 ᴍɪɴᴜᴛᴇs \n<b>✓ ᴘᴀʀᴀʟʟᴇʟ ᴘʀᴏᴄᴇss :</b> ᴜɴʟɪᴍɪᴛᴇᴅ \n<b>✓ ᴛɪᴍᴇ ɢᴀᴘ :</b> ʏᴇs \n\n**<b>ᴠᴀʟɪᴅɪᴛʏ :</b>** ʟɪғᴇᴛɪᴍᴇ"
     else:
         normal_date = datetime.fromtimestamp(ends).strftime('%Y-%m-%d')
-        text = f"**User ID :** `{message.from_user.id}` \n**Name :** {message.from_user.mention} \n\n**🏷 Plan :** {user} \n\n✓ High Priority \n✓ Upload 4GB Files \n✓ Daily Upload : {humanbytes(limit)} \n✓ Today Used : {humanbytes(used)} \n✓ Remain : {humanbytes(remain)} \n✓ Timeout : 0 Second \n✓ Parallel process : Unlimited \n✓ Time Gap : Yes \n\n**Your Plan Ends On :** {normal_date}"
+        text = f"**User ID :** `{message.from_user.id}` \n**Name :** {message.from_user.mention} \n\n**<b>🏷 ᴘʟᴀɴ :</b>** {user} \n\n<b>✓ ʜɪɢʜ ᴘʀɪᴏʀɪᴛʏ </b>\n<b>✓ ᴜᴘʟᴏᴀᴅ 4GB ғɪʟᴇs </b>\n<b>✓ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ </b>: {humanbytes(limit)} \n<b>✓ ᴛᴏᴅᴀʏ ᴜsᴇᴅ </b>: {humanbytes(used)} \n<b>✓ ʀᴇᴍᴀɪɴ :</b> {humanbytes(remain)} \n<b>✓ ᴛɪᴍᴇᴏᴜᴛ :</b> 0 sᴇᴄᴏɴᴅ \n</b>✓ ᴘᴀʀᴀʟʟᴇʟ ᴘʀᴏᴄᴇss :</b> ᴜɴʟɪᴍɪᴛᴇᴅ \n<b>✓ ᴛɪᴍᴇ ɢᴀᴘ :</b> Yes \n\n**<b>ʏᴏᴜʀ ᴘʟᴀɴ ᴇɴᴅs ᴏɴ </b>:** {normal_date}"
 
     if user == "Free":
-        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💳 Upgrade", callback_data="upgrade"), InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
+        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("<b>💳 ᴜᴘɢʀᴀᴅᴇ</b>", callback_data="upgrade"), InlineKeyboardButton("✘ ᴄᴀɴᴄᴇʟ", callback_data="cancel")]]))
     else:
-        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️ Cancel ✖️", callback_data="cancel")]]))
+        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("<b>✘ ᴄᴀɴᴄᴇʟ ✘</b>", callback_data="cancel")]]))
 
 
 
