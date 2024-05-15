@@ -35,15 +35,15 @@ async def start(client, message):
     loading_sticker_message = await message.reply_sticker("CAACAgIAAxkBAALmzGXSSt3ppnOsSl_spnAP8wHC26jpAAJEGQACCOHZSVKp6_XqghKoHgQ")
     await asyncio.sleep(2)
     await loading_sticker_message.delete()
-    txt=f"""Hello {message.from_user.mention} \n\n➻ This Is An Advanced And Yet Powerful Rename Bot.\n\n➻ Using This Bot You Can Rename And Change Thumbnail Of Your Files.\n\n➻ You Can Also Convert Video To File Aɴᴅ File To Video.\n\n➻ This Bot Also Supports Custom Thumbnail And Custom Caption.\n\n<b>Bot Is Made By @Madflix_Bots</b>"""
+    txt=f"""Hello {message.from_user.mention} \n\n<b>➻ ᴛʜɪs ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʏᴇᴛ ᴘᴏᴡᴇʀғᴜʟ ʀᴇɴᴀᴍᴇ ʙᴏᴛ.<b>\n\n</b>➻ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙɴᴀɪʟ ᴏғ ʏᴏᴜʀ ғɪʟᴇs.</b>\n\n<b>➻ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴠᴇʀᴛ ᴠɪᴅᴇᴏ ᴛᴏ ғɪʟᴇ Aɴᴅ ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ.</b>\n\n<b>➻ ᴛʜɪs ʙᴏᴛ ᴀʟsᴏ sᴜᴘᴘᴏʀᴛs ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.</b>\n\n<b>ʙᴏᴛ ɪs ᴍᴀᴅᴇ ʙʏ @ZPro_Bots</b>"""
     await message.reply_photo(photo=BOT_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                        [[InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇs", url="https://t.me/ZPro_Bots"),
-                                        InlineKeyboardButton("💬 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/+FGM0HOnjDC45ZDk1")],
-                                        [InlineKeyboardButton("🛠️ Hᴇʟᴘ", callback_data='help'),
-				                        InlineKeyboardButton("😊 ᴀʙᴏᴜᴛ", callback_data='about')],
-                                        [InlineKeyboardButton("🧑‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ 🧑‍💻", url="https://t.me/CallAdminRobot")]
+                                        [[InlineKeyboardButton("Uᴘᴅᴀᴛᴇs", url="https://t.me/ZPro_Bots"),
+                                        InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/+FGM0HOnjDC45ZDk1")],
+                                        [InlineKeyboardButton("Hᴇʟᴘ", callback_data='help'),
+				                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')],
+                                        [InlineKeyboardButton("🍁 ᴘʀᴇᴍɪᴜᴍ 🍁", callback_data="upgrade")]
                                         ]))
     return
 
@@ -60,7 +60,7 @@ async def send_doc(client, message):
             await message.reply_text("<b>Hello Dear \n\nYou Need To Join In My Channel To Use Me\n\nKindly Please Join Channel</b>",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{update_channel}")]]))
+                                         [[InlineKeyboardButton("🔺 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🔺", url=f"https://t.me/{update_channel}")]]))
             await client.send_message(log_channel,f"<b><u>New User Started The Bot</u></b> \n\n<b>User ID</b> : `{user_id}` \n<b>First Name</b> : {message.from_user.first_name} \n<b>Last Name</b> : {message.from_user.last_name} \n<b>User Name</b> : @{message.from_user.username} \n<b>User Mention</b> : {message.from_user.mention} \n<b>User Link</b> : <a href='tg://openmessage?user_id={user_id}'>Click Here</a> \n<b>User Plan</b> : {user}",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺  Rᴇsᴛʀɪᴄᴛ Usᴇʀ ( **PM** )  🔺", callback_data="ceasepower")]]))
             return
@@ -86,7 +86,7 @@ async def send_doc(client, message):
     conversion = datetime.timedelta(seconds=left)
     ltime = str(conversion)
     if left > 0:
-        await message.reply_text(f"<b>Sorry Dude I Am Not Only For You \n\nFlood Control Is Active So Please Wait For {ltime} </b>", reply_to_message_id=message.id)
+        await message.reply_text(f"<b>sᴏʀʀʏ ᴅᴜᴅᴇ ɪ ᴀᴍ ɴᴏᴛ ᴏɴʟʏ ғᴏʀ ʏᴏᴜ \n\nғʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ ɪs ᴀᴄᴛɪᴠᴇ sᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ {ltime} </b>", reply_to_message_id=message.id)
     else:
         # Forward a single message
         media = await client.get_messages(message.chat.id, message.id)
