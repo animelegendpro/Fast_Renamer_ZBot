@@ -1,38 +1,37 @@
 class script(object):
-    HELP_TXT = """<b>Hey</b> {}
+    HELP_TXT = """<b>ʜᴇʏ 😎</b> {}
     
-<b>Here Is The Help For My Commands.</b>"""
+<b>ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
 
-    CAPTION_TXT = """<b><u>📝  HOW TO SET CAPTION</u></b>
+    CAPTION_TXT = """<b>๏ ʜᴏᴡ ᴛᴏ sᴇᴛ ᴄᴀᴘᴛɪᴏɴ ๏</b>
 
-<b>⦿ /set_caption - Use This Command To Set Your Caption</b>
-<b>⦿ /see_caption - Use This Command To See Your Caption</b>
-<b>⦿ /del_caption - Use This Command To Delete Your Caption</b>"""
+<b>↬ /set_caption - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴛ ʏᴏᴜʀ ᴄᴀᴘᴛɪᴏɴ</b>
+<b>↬ /see_caption - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴇ ʏᴏᴜʀ ᴄᴀᴘᴛɪᴏɴ</b>
+<b>↬ /del_caption - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄᴀᴘᴛɪᴏɴ</b>"""
    
-    THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
+    THUMBNAIL_TXT = """<b>๏ ʜᴏᴡ ᴛᴏ sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ ๏</b>
 
-<b>⦿ You Can Add Custom Thumbnail Simply By Sending A Photo To Me....</b>
+<b>↬ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ sɪᴍᴘʟʏ ʙʏ sᴇɴᴅɪɴɢ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ᴍᴇ....</b>
 
-<b>⦿ /viewthumb - Use This Command To See Your Thumbnail</b>
-<b>⦿ /delthumb - Use This Command To Delete Your Thumbnail</b>"""
+<b>↬ /viewthumb - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴇ ʏᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ</b>
+<b>↬ /delthumb - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ</b>"""
 
-    ABOUT_TXT = """<b>🤖 My Name :</b> <a href='https://t.me/Auto_Renamer_XBot'>Rename Bot 4GB</a>
-<b>○ Language :</b> <a href='https://python.org'>Python 3</a>
-<b>○ Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>○ Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>○ Channel :</b> <a href='https://t.me/ZPro_Bots'>Madflix Botz</a>
-<b>○ Developer :</b> <a href='https://t.me/Devil_Eyes_ZX'>Jishu Developer</a>
+    ABOUT_TXT = """<b>๏ ᴍʏ ɴᴀᴍᴇ :</b> <a href='https://t.me/Fast_Renamer_ZBot'><b>Fast Renamer ZBot</b></a>
+<b>○ ʟᴀɴɢᴜᴀɢᴇ :</b> <a href='https://python.org'><b>ᴘʏᴛʜᴏɴ 3</b></a>
+<b>○ ʟɪʙʀᴀʀʏ :</b> <a href='https://pyrogram.org'><b>ᴘʏʀᴏɢʀᴀᴍ 2.0</b></a>
+<b>○ sᴇʀᴠᴇʀ :</b> <a href='https://heroku.com'><b>ʜᴇʀᴏᴋᴜ</b></a>
+<b>○ ᴄʜᴀɴɴᴇʟ :</b> <a href='https://t.me/ZPro_Bots'><b>Zᴘʀᴏ ʙᴏᴛs</b></a>
+<b>○ ᴅᴇᴠᴇʟᴏᴘᴇʀ :</b> <a href='https://t.me/Devil_Eyes_ZX'><b>Ɗᴇᴠɪʟ ᴇʏᴇs</b></a>
 
-<b>♻️ Bot Made By :</b> @ZPro_Bots"""
+<b>♻ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ :</b> @ZPro_Bots"""
 
     DONATE_TXT = """
-<b>🥲 Thanks For Showing Interest In Donation! ❤️</b>
+<b>🥲 ᴛʜᴀɴᴋs ғᴏʀ sʜᴏᴡɪɴɢ ɪɴᴛᴇʀᴇsᴛ ɪɴ ᴅᴏɴᴀᴛɪᴏɴ! ❤️</b>
 
-If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
+<b>↬ ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴍʏ ʙᴏᴛs & ᴘʀᴏᴊᴇᴄᴛs, ʏᴏᴜ ᴄᴀɴ ᴅᴏɴᴀᴛᴇ ᴍᴇ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ғʀᴏᴍ 𝟸𝟶 ʀs ᴜᴘᴛᴏ ʏᴏᴜʀ ᴄʜᴏɪᴄᴇ.</b>
 
-<b>🛍 UPI ID:</b> <code>anime-legend@axl</code> 
+<b>🛍 ᴜᴘɪ ɪᴅ:</b> <code>anime-legend@axl</code> 
 
-<b>📸 Send Screenshot After Donation To Activate Your Premium Plan </b> """
 
     ADMIN_TXT = """<b><u>🦋 ADMIN ALL COMMANDS HERE</u></b>
 
