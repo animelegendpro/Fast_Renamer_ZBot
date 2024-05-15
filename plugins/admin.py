@@ -19,30 +19,30 @@ async def warn(c, m):
 
 @Client.on_message(filters.private & filters.user(OWNER) & filters.command(["addpremium"]))
 async def buypremium(bot, message):
-	await message.reply_text("🦋 Select Plan To Upgrade...", quote=True, reply_markup=InlineKeyboardMarkup([
-		           [InlineKeyboardButton("🪙 Basic", callback_data="vip1")],
-				   [InlineKeyboardButton("⚡ Standard", callback_data="vip2")],
-				   [InlineKeyboardButton("💎 Pro", callback_data="vip3")],
-				   [InlineKeyboardButton("✖️ Cancel ✖️",callback_data = "cancel")]
+	await message.reply_text("<b>๏ sᴇʟᴇᴄᴛ ᴘʟᴀɴ ᴛᴏ ᴜᴘɢʀᴀᴅᴇ...</b>", quote=True, reply_markup=InlineKeyboardMarkup([
+		           [InlineKeyboardButton("🪙 ʙᴀsɪᴄ", callback_data="vip1")],
+				   [InlineKeyboardButton("⚡ sᴛᴀɴᴅᴀʀᴅ", callback_data="vip2")],
+				   [InlineKeyboardButton("👑 ᴘʀᴏ", callback_data="vip3")],
+				   [InlineKeyboardButton("✘ ᴄᴀɴᴄᴇʟ ✘",callback_data = "cancel")]
 				   
 				   ]))
 
 
 @Client.on_message((filters.channel | filters.private) & filters.user(OWNER) & filters.command(["ceasepower"]))
 async def ceasepremium(bot, message):
-	await message.reply_text("😁 Power Cease Mode...", quote=True, reply_markup=InlineKeyboardMarkup([
-		           [InlineKeyboardButton("Limit 1GB", callback_data="cp1")],
-				   [InlineKeyboardButton("All Power Cease", callback_data="cp2")],
-				   [InlineKeyboardButton("✖️ Cancel ✖️",callback_data = "cancel")]
+	await message.reply_text("<b>๏ ᴘᴏᴡᴇʀ ᴄᴇᴀsᴇ ᴍᴏᴅᴇ...</b>", quote=True, reply_markup=InlineKeyboardMarkup([
+		           [InlineKeyboardButton("ʟɪᴍɪᴛ 1GB", callback_data="cp1")],
+				   [InlineKeyboardButton("ᴀʟʟ ᴘᴏᴡᴇʀ ᴄᴇᴀsᴇ", callback_data="cp2")],
+				   [InlineKeyboardButton("✘ ᴄᴀɴᴄᴇʟ ✘",callback_data = "cancel")]
 				   
 				   ]))
 
 
 @Client.on_message((filters.channel | filters.private) & filters.user(OWNER) & filters.command(["resetpower"]))
 async def resetpower(bot, message):
-	    await message.reply_text(text=f"Do You Really Want To Reset Daily Limit To Default Data Limit 2GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
-		           [InlineKeyboardButton("• Yes ! Set As Default •",callback_data = "dft")],
-				   [InlineKeyboardButton("❌ Cancel ❌",callback_data = "cancel")]
+	    await message.reply_text(text=f"Do ʏᴏᴜ ʀᴇᴀʟʟʏ ᴡᴀɴᴛ ᴛᴏ ʀᴇsᴇᴛ ᴅᴀɪʟʏ ʟɪᴍɪᴛ ᴛᴏ ᴅᴇғᴀᴜʟᴛ ᴅᴀᴛᴀ ʟɪᴍɪᴛ 2GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
+		           [InlineKeyboardButton("• ʏᴇs ! sᴇᴛ ᴀs ᴅᴇғᴀᴜʟᴛ •",callback_data = "dft")],
+				   [InlineKeyboardButton("✘ ᴄᴀɴᴄᴇʟ ✘",callback_data = "cancel")]
 				   ]))
 
 
@@ -54,10 +54,10 @@ async def vip1(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit  = 21474836500
 	uploadlimit(int(user_id),21474836500)
-	usertype(int(user_id),"🪙 Basic")
+	usertype(int(user_id),"🪙 ʙᴀsɪᴄ")
 	addpre(int(user_id))
-	await update.message.edit("Added Successfully To Premium Upload Limit 20 GB")
-	await bot.send_message(user_id,"Hey You Are Upgraded To Basic. Check Your Plan Here /myplan")
+	await update.message.edit("ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 20 GB")
+	await bot.send_message(user_id,"ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ᴜᴘɢʀᴀᴅᴇᴅ ᴛᴏ ʙᴀsɪᴄ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
@@ -65,10 +65,10 @@ async def vip2(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit = 53687091200
 	uploadlimit(int(user_id), 53687091200)
-	usertype(int(user_id),"⚡ Standard")
+	usertype(int(user_id),"⚡ sᴛᴀɴᴅᴀʀᴅ")
 	addpre(int(user_id))
-	await update.message.edit("Added Successfully To Premium Upload Limit 50 GB")
-	await bot.send_message(user_id,"Hey You Are Upgraded To Standard. Check Your Plan Here /myplan")
+	await update.message.edit("ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 50 GB")
+	await bot.send_message(user_id,"ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ᴜᴘɢʀᴀᴅᴇᴅ ᴛᴏ sᴛᴀɴᴅᴀʀᴅ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
@@ -76,10 +76,10 @@ async def vip3(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit = 107374182400
 	uploadlimit(int(user_id), 107374182400)
-	usertype(int(user_id),"💎 Pro")
+	usertype(int(user_id),"👑 ᴘʀᴏ")
 	addpre(int(user_id))
-	await update.message.edit("Added Successfully To Premium Upload Limit 100 GB")
-	await bot.send_message(user_id,"Hey You Are Upgraded To Pro. Check Your Plan Here /myplan")
+	await update.message.edit("ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟷𝟶𝟶 ɢʙ")
+	await bot.send_message(user_id,"ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ᴜᴘɢʀᴀᴅᴇᴅ ᴛᴏ ᴘʀᴏ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 
 # CEASE POWER MODE @JISHUDEVELOPER
@@ -90,10 +90,10 @@ async def cp1(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit  = 2147483652
 	uploadlimit(int(user_id), 2147483652)
-	usertype(int(user_id),"⚠️ Account Downgraded")
+	usertype(int(user_id),"⚠️ ᴀᴄᴄᴏᴜɴᴛ ᴅᴏᴡɴɢʀᴀᴅᴇᴅ")
 	addpre(int(user_id))
-	await update.message.edit("Added Successfully To Upload Limit 2GB")
-	await bot.send_message(user_id,"Hey You Are Downgraded To Cease Limit 2GB. Check Your Plan Here /myplan \n\n**Contact Admin :** @calladminrobot")
+	await update.message.edit("ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 2GB")
+	await bot.send_message(user_id,"ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ᴅᴏᴡɴɢʀᴀᴅᴇᴅ ᴛᴏ ᴄᴇᴀsᴇ ʟɪᴍɪᴛ 2GB. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan \n\n**ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ :** @Devil_Eyes_ZX")
 
 
 @Client.on_callback_query(filters.regex('cp2'))
@@ -102,10 +102,10 @@ async def cp2(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit  = 0
 	uploadlimit(int(user_id), 0)
-	usertype(int(user_id),"⚠️ Account Downgraded")
+	usertype(int(user_id),"⚠️ ᴀᴄᴄᴏᴜɴᴛ ᴅᴏᴡɴɢʀᴀᴅᴇᴅ")
 	addpre(int(user_id))
-	await update.message.edit("Added Successfully To Upload Limit 0GB")
-	await bot.send_message(user_id,"Hey You Are Downgraded To Cease Limit 0GB. Check Your Plan Here /myplan \n\n**Contact Admin :** @calladminrobot")
+	await update.message.edit("ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 0GB")
+	await bot.send_message(user_id,"ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ᴅᴏᴡɴɢʀᴀᴅᴇᴅ ᴛᴏ ᴄᴇᴀsᴇ ʟɪᴍɪᴛ 0GB. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan \n\n**ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ :** @Devil_Eyes_ZX")
 
 
 
@@ -118,10 +118,10 @@ async def dft(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit = 2147483652
 	uploadlimit(int(user_id), 2147483652)
-	usertype(int(user_id),"🆓 Free")
+	usertype(int(user_id),"🆓 Fʀᴇᴇ")
 	addpre(int(user_id))
-	await update.message.edit("**Daily Data Limit Has Been Reset Successfully.**\n\nThis Account Has Default 2GB Remaining Capacity")
-	await bot.send_message(user_id,"**Your Daily Data Limit Has Been Reset Successfully.**\n\nCheck Your Plan Here /myplan\n\n**Contact Admin :** <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>")
+	await update.message.edit("**ᴅᴀɪʟʏ ᴅᴀᴛᴀ ʟɪᴍɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇsᴇᴛ sᴜᴄᴄᴇssғᴜʟʟʏ.**\n\nᴛʜɪs ᴀᴄᴄᴏᴜɴᴛ ʜᴀs ᴅᴇғᴀᴜʟᴛ 2GB ʀᴇᴍᴀɪɴɪɴɢ ᴄᴀᴘᴀᴄɪᴛʏ")
+	await bot.send_message(user_id,"**ʏᴏᴜʀ ᴅᴀɪʟʏ ᴅᴀᴛᴀ ʟɪᴍɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇsᴇᴛ sᴜᴄᴄᴇssғᴜʟʟʏ.**\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan\n\n**ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ :** <a href='https://t.me/Devil_Eyes_ZX'>Devil Eyes</a>")
 
 
 
