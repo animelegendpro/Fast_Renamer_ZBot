@@ -16,8 +16,8 @@ async def users(client,message):
 	id = str(getid())
 	ids = id.split(',')
 
-	await message.reply_text(f"⚡️ **Total User** :- {total_user()}\n\n⚡️ **Total Renamed File** :- {total_rename}\n⚡ **Total Size Renamed** :- {humanbytes(int(total_size))}",quote=True,
-                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("🦋 Close 🦋", callback_data="cancel")]]) 
+	await message.reply_text(f"๏ **ᴛᴏᴛᴀʟ ᴜsᴇʀ** :- {total_user()}\n\n๏ **ᴛᴏᴛᴀʟ ʀᴇɴᴀᴍᴇᴅ ғɪʟᴇ** :- {total_rename}\n๏ **ᴛᴏᴛᴀʟ sɪᴢᴇ ʀᴇɴᴀᴍᴇᴅ** :- {humanbytes(int(total_size))}",quote=True,
+                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("✘ Cʟᴏsᴇ ✘", callback_data="cancel")]]) 
                              )
 	
 @Client.on_message(filters.private & filters.user(OWNER)  & filters.command(["allids"]))
@@ -29,8 +29,8 @@ async def allids(client,message):
 	id = str(getid())
 	ids = id.split(',')
 
-	await message.reply_text(f"⚡️ **All IDs** :- {ids}\n\n⚡️ **Total User** :- {total_user()}\n\n⚡️ **Total Renamed File** :- {total_rename}\n⚡ **Total Size Renamed** :- {humanbytes(int(total_size))}",quote=True,
-                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("🦋 Close 🦋", callback_data="cancel")]]) 
+	await message.reply_text(f"๏ **ᴀʟʟ ɪᴅs** :- {ids}\n\n๏ **ᴛᴏᴛᴀʟ ᴜsᴇʀ** :- {total_user()}\n\n๏ **ᴛᴏᴛᴀʟ ʀᴇɴᴀᴍᴇᴅ ғɪʟᴇ** :- {total_rename}\n๏ **ᴛᴏᴛᴀʟ sɪᴢᴇ ʀᴇɴᴀᴍᴇᴅ** :- {humanbytes(int(total_size))}",quote=True,
+                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("✘ Cʟᴏsᴇ ✘", callback_data="cancel")]]) 
                              )	
 
 
