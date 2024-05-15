@@ -28,9 +28,9 @@ PORT = os.environ.get("PORT", "8080")
 # token verification adding features is paid so if you want then dm me
 
 
-SHORTNER_URL = os.environ.get("SHORTNER_URL", "")
-SHORTNER_API = os.environ.get("SHORTNER_API", "")
-TOKEN_TIMEOUT = os.environ.get("TOKEN_TIMEOUT", "")
+# SHORTNER_URL = os.environ.get("SHORTNER_URL", "")
+# SHORTNER_API = os.environ.get("SHORTNER_API", "")
+# TOKEN_TIMEOUT = os.environ.get("TOKEN_TIMEOUT", "")
 
 
 # Jishu Developer 
